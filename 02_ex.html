@@ -5,6 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        var str = "老师:用小红 我的 朋友 三个词造句。小亮:小红是我的朋友 小然:朋友！小红是我的";
+        // var str = "you can you up no can no bibi"
+        // var arr1 = str.match(/小[\u4e00-\u9fa5]/);
+        // console.log(arr1);
+        var arr = str.match(/小[\u4e00-\u9fa5]/g);
+        console.log(arr);
+        var arr2 = str.replace(/小[\u4e00-\u9fa5]/g, "**");
+        console.log(arr2);
+        // if (arr != null) {
+        //     console.log(`共替换${arr.length}处`);
+        // } else {
+        //     console.log(`共替换0处`);
+        // }
+        console.log(`共替换${arr=null?0:arr.length}处`);
+    </script>
 </head>
 
 <body>
