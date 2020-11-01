@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        var msg = prompt("请输入消息内容"); //弹出一个输入框
+        var arr = msg.match(/([我 卧]|wo)\s*([草艹槽]|cao)/i);
+        if (arr != null) {
+            document.write(`<h1 style="color: red;">在位置${arr["index"]}发现敏感词${arr["0"]}</h1>`)
+        } else {
+            document.write(`<h1 style="color:green">然哥说:${msg}</h1>`)
+        }
+    </script>
 </head>
 
 <body>
